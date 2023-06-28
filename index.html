@@ -61,7 +61,7 @@
         }
 
         let blocks = document.querySelectorAll(".block");
-        let duration = 0.25;
+        let duration = 0.5; //each .block coming time
         let stagger = duration;
         let repeatDelay = 0.075 * (blocks.length - 1);
 
@@ -84,8 +84,6 @@
             block.addEventListener("click", (event) => {
                 const x = event.clientX;
                 const y = event.clientY;
-
-
                 if (previousGif) {
                     previousGif.remove();
                 }
